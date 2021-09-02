@@ -6,12 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9/3/2021 Blog Post</title>
 </head>
+<style>
+    #sample {
+        text-align: center;
+        font-size: 12px;
+        font-style: italic;
+        position: relative;
+        top: -25px;
+        left: -50px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    #home {
+        font-size: 14px;
+    }
+</style>
 <body>
     <h2>9/3/2021 Blog Post</h2>
-    <p>This week I learned how to setup my first HTML webpage. I learned over 20 new tags that I can use to improve 
-        the way my webpages look to my viewers. One of the most notible things
-        I learned this week was how to make a form. Learning how you can connect
-        your labels to your inputs within a form was really good for the future.
+    <p style="text-align: center;"><a href="index.html" id="home">Home</a></p>
+    <p>This week I learned how to setup my first blog HTML webpage. I learned over 10 new tags that 
+        I can use to improve the way my webpages look to my viewers and to help me organize all of 
+        my source code. One of the most notible things I learned this week was how to make a form.
+        Learning how you can connect your labels to your inputs within a form will be really good 
+        for the future. I want to use what I learned to make a contact page for my own personal portfolio website.
     </p>
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;label for="fname"&gt;First name:&lt;/label&gt;
+                &lt;input type="text" id="fname" name="fname" value="John"&gt;
+                &lt;br&gt;
+                &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+                &lt;input type="text" id="lname" name="lname" value="Wayne"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+    <p id="sample">Here is my sample code of making a simple first name and last
+        name entry box with attached labels
+    </p>
+    <p>
+        I needed some help figuring out how to link serveral pages onto the home page of my blog so people could 
+        see all of my blog posts seperate. I found <a href="https://www.youtube.com/watch?v=iXSSHlOe47s&t=0s">this video</a> which
+        clearly explained exactly how to make these pages and link them. The video showed how to use this knowledge to make a 
+        navigation bar at the top of a webpage. I think this might come in handy when I am making my own websites in the future. He showed
+        some CSS code which made me excited that we will be learning CSS next week.
+    </p>
+    <img src="htmlcss.jpg" alt="HTML vs CSS" width="300px" height="200px" class="center">
 </body>
 </html>
