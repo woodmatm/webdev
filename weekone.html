@@ -5,34 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9/3/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
-<style>
-    #sample {
-        text-align: center;
-        font-size: 12px;
-        font-style: italic;
-        position: relative;
-        top: -25px;
-        left: -50px;
-    }
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    #home {
-        font-size: 14px;
-    }
-    #code {
-        font-size: 12px;
-        position: relative;
-        left: 450px;
-    }
-</style>
-<body style="background-color:#D3D3D3">
+<body>
     <h2>9/3/2021 Blog Post</h2>
-    <p style="text-align: center;"><a href="index.html" id="home">Home</a></p>
+    <p id="home"><a href="index.html">Home</a></p>
     <p>This week I learned how to setup my first HTML blog webpage. I learned over 10 new tags that 
         I can use to improve the way my webpages look to my viewers and to help me organize all of 
         my source code. One of the most notible things I learned this week was how to make a webpage form
@@ -43,26 +20,25 @@
     </p>
     <div id="code">
     <pre>
-        <code>
-            &lt;form&gt;
-                &lt;label for="fname"&gt;First name:&lt;/label&gt;
-                &lt;input type="text" id="fname" name="fname" value="John"&gt;
-                &lt;br&gt;
-                &lt;label for="lname"&gt;Last name:&lt;/label&gt;
-                &lt;input type="text" id="lname" name="lname" value="Wayne"&gt;
-            &lt;/form&gt;
-        </code>
+        &lt;form&gt;
+            &lt;label for="fname"&gt;First name:&lt;/label&gt;
+            &lt;input type="text" id="fname" name="fname" value="John"&gt;
+            &lt;br&gt;
+            &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+            &lt;input type="text" id="lname" name="lname" value="Wayne"&gt;
+        &lt;/form&gt;
     </pre>
-    </div>
-    <p id="sample">Here is my sample code of making a simple first name and last
+    <h2 id="sample">Here is my sample code of making a simple first name and last
         name entry box with attached labels
-    </p>
+    </h2>
+    </div>
     <p>
         I needed some help figuring out how to link serveral pages onto the home page of my blog so people could 
-        see all of my blog posts seperate. I found <a href="https://www.youtube.com/watch?v=iXSSHlOe47s&t=0s">this video</a> which
+        see all of my blog posts seperate. I found <a id="video" href="https://www.youtube.com/watch?v=iXSSHlOe47s&t=0s">this video</a> which
         clearly explained exactly how to make these pages and link them. The video showed how to use this knowledge to make a 
         navigation bar at the top of a webpage. I believe this will come in handy when I am making my own websites in the future. He showed
-        some CSS code which made me excited that we will be learning CSS next week.
+        some CSS code which made me excited that we will be learning CSS next week. I used some box model methods here to make all of my blog
+        content more central to the page.
     </p>
     <br>
     <img src="htmlcss.jpg" alt="HTML vs CSS" height="200px" class="center">
