@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9/17/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="wrevor_badge_13.png"/>
+</head>
+<body>
+    <h2>9/17/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned so much about using flexbox to sort my html code through
+        CSS. Flexbox was designed as a one-dimensional layout model, and as a method 
+        that could offer space distribution between items in an interface and powerful 
+        alignment capabilities. I found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">this article</a>
+        by Mozilla, that along with our book taught me different ways I could organize
+        my webpages and the data within them. The main two CSS elements I learned about
+        are justify-content and align-items. The CSS justify-content property defines how 
+        the browser distributes space between and around content items along the main-axis 
+        of a flex container, and the inline axis of a grid container. The CSS align-items
+        property defines the default behavior for how items are laid out along the cross axis.
+        Throughout the week I struggled to get the hang of the concepts but after loads of practice
+        by either playing Flexercise or just doing some simple trial and error, I feel alot better
+        with the progress I have made.
+
+    </p>
+    <div id="code">
+    <pre>
+        &lt;div class="parent">
+            &lt;span class="child"&gt;T&lt;/span&gt;
+            &lt;span class="child"&gt;R&lt;/span&gt;
+            &lt;span class="child"&gt;E&lt;/span&gt;
+            &lt;span class="child"&gt;V&lt;/span&gt;
+            &lt;span class="child"&gt;O&lt;/span&gt;
+            &lt;span class="child"&gt;R&lt;/span&gt;
+        &lt;/div&gt;
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            height: 200px;
+        }
+        
+        .child {
+            margin: 25px;
+            padding: 10px;
+        
+            font-size: 44px;
+            background-color: red;
+        }
+    </pre>
+    <h2 id="sample">Here is sample code where I spread out my name in the middle of the Flexbox
+    </h2>
+    </div>
+    <p>
+        I wanted to see more that I could do with Flexbox so I found <a href="https://www.youtube.com/watch?v=PwWHL3RyQgk">this video</a>
+        that shows you different ways to make a navigation bar using Flexbox. I was specifically interested in this video because I believe
+        it will come in handy when I make the navigation bar for my static webpage. I have made a navigation bar before but what I liked about
+        the ones in the video were their sleek design and the code to make them is very easy to read now that I understand Flexbox.
+    </p>
+    <img id="box" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Q6Y7nAWs--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/hahwcwzkrcd3glxt4bxd.jpg" alt="Elements of the Box Model" class="center">
+</body>
+</html>

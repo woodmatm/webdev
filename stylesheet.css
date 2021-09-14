@@ -68,3 +68,20 @@ p {
     width: 400px;
     height: 200px;
 }
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+.child {
+    margin: 25px;
+    padding: 10px;
+
+    font-size: 44px;
+    background-color: red;
+}
