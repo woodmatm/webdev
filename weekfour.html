@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9/24/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>9/24/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned about how positioning is essential when it comes to building complex interfaces. There are 5 different 
+        positioning types static, relative, fixed, absolute, and sticky. I have used a couple of these before learning about them
+        this week, for example I have used the fixed position for the footer of my main blog page so that it will never move from
+        the bottom of the screen. Once the elements position type is set we can use the right, left, top,
+        and bottom properties to place items exactly where we want. This tool makes it easy to layout your webpage exactly how you
+        see fit. My favorite position is the sticky position because once you scroll to where a div with the stick property should
+        be off of the screen it sticks to that part of the screen so that it will always be present. The image at the bottom of this
+        blog post gives a great graphic example of all of the positioning properties so I will keep this in mind when using these 
+        properties within my static website.
+
+    </p>
+    <div id="code">
+    <pre>
+        #ani {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: shift;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            align-items: center;
+            color: white;
+            font-size: 22px;
+        }
+        
+        @keyframes shift {
+            0%   {background-color:red; left:0%}
+            50%  {background-color:blue; left:50%}
+            100% {background-color:red; left:100%}
+          }
+    </pre>
+    <div id="ani">Hello :)</div>
+    <h2 id="sample">The code above was used to make this animation!
+    </h2>
+    </div>
+    <p>
+        Now that I have been in this class for a couple of weeks, my youtube recommendations give me a lot
+        of CSS and HTML videos. I have seen several videos of some of the insane animations some developers
+        can make using just simple CSS and HTML so I thought I would dive in and learn some simple animations.
+        I used <a href="https://www.w3schools.com/css/css3_animations.asp">this website</a> to make a simple
+        animation of a box moving from left to right while changing colors. I decided to actually implement my
+        code onto the screen and show my code snippit along with it. Hopefully in the future we touch on animation
+        and I can make something more advanced than this.
+    </p>
+    <img id="position" src="https://miro.medium.com/max/1400/1*x5xm9DVS6QouWCAeII9w8A.png" alt="Positioning Porperties in CSS" class="center">
+</body>
+</html>

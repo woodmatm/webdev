@@ -24,8 +24,8 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color:gray;
+    color: black;
     text-align: center;
 }
 #mail {
@@ -85,3 +85,22 @@ p {
     font-size: 44px;
     background-color: red;
 }
+
+#ani {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: shift;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+@keyframes shift {
+    0%   {background-color:red; left:0%}
+    50%  {background-color:blue; left:50%}
+    100% {background-color:red; left:100%}
+  }
