@@ -104,3 +104,8 @@ p {
     50%  {background-color:blue; left:50%}
     100% {background-color:red; left:100%}
   }
+
+#js-pic {
+    height: 250px;
+    width: 400px;
+}

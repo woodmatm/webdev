@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10/08//2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>10/08/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned a lot about Javascript and how I can use it to advance my html code. I can use it to
+        add lots of interactive behavior to my webpages. Javascript, CSS, and HTML is the most dynamic trio when it comes
+        to web development. Javascript is the only programming language native to the web browser and has lots of functions
+        that makes it easy for programmers to interact with. HTML structures the content, CSS styles it, and JavaScript makes
+        everything come to life. I thought it was really cool using fetch on JSON data to extract it and modify it. I feel like
+        this will be very useful when we start to do some backend using databases to recieve our data and sort through it.
+
+    </p>
+    <div id="code">
+    <pre>
+        const lateGrades = [100, 94, 86, 90, 98, 78];
+
+        lateGrades.map(function(item){
+            return item * 0.9; // late penalty of 10%
+        });
+
+        // returns [90, 85, 77, 81, 88, 70]
+    </pre>
+    <h2 id="sample">Using Javascript Map method to calculate late grades
+    </h2>
+    </div>
+    <p>
+        I decided to look up some of the most used methods in javascript to help familirize myself with the language since
+        I haven't used javascript all that much before. I found <a href="https://www.freecodecamp.org/news/7-javascript-methods-that-will-boost-your-skills-in-less-than-8-minutes-4cc4c3dca03f/">this</a>
+        article that goes through several methods and give code snippit examples to help the reader get the grasp of how they work. One method that I found
+        interesting was the reduce method that can be used for several applications such as executing promises sequentially, counts duplicates, performs calculations,
+        etc. Usually to do most of these things you have to do them manually in other languages so I believe this method may become very valuable to know in the near future.
+        There are several other functions on here like the map function that makes it super simple to modify a whole array and return a new one. After practicing with these on my own
+        and doing our exercises this week, I feel like I am starting to understand Javascript better than I did a week ago which means I am making progress.
+
+    </p>
+    <img id="js-pic" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/variants/KLA6rp8UHypqY2xMjWu8vJXq/035575f2985fe451d86e717d73691e533a1a00545d7230900ed786341dc3c882" alt="Javascript Logo" class="center">
+</body>
+</html>
