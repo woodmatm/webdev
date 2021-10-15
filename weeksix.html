@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10/15/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>10/15/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned how to implement Express into JavaScript. Express is a minimal and flexible Node.js web application framework that provides a 
+        robust set of features for web and mobile applications. I used Express for GET requests and POST requests for Urban Dictionary. At first I really didn't
+        understand how to get these to work but I finally got my port up and running. Once I took a step back to read into POST and GET I really understood the concept
+        which helped me to be able to code it. It is more simple than it looks and will be very useful when I am trying to access data from a database. I am excited to
+        implement the things I we did in class into my second project. 
+
+    </p>
+    <div id="code">
+    <pre>
+        const promises = [
+            Promise.resolve(100)
+            fetch("http://localhost/"),
+            fetch("http://localhost/"),
+        ];
+
+        const statusPromises = await Promise.all(promises);
+        console.log(statusPromises);
+        console.log("Promises finished execution");
+    </pre>
+    <h2 id="sample">Wait until multiple promises are complete
+    </h2>
+    </div>
+    <p>
+        I found an <a href="https://medium.com/geekculture/10-clever-javascript-tricks-that-every-developer-should-know-e0be92bcfe9">article</a>
+         called 10 Clever JavaScript Tricks That Every Developer Should Know. The title really caught my attention so I obviously had to read more.
+         One trick I found that could be very useful in the future was some code that allows you to wait until multiple promises are complete to proceed.
+         It uses the await keyword which was also in our textbook and puts it to good use. Using this Promise.all will also return a rejected if any of the
+         promises return a reject so using this can confirm all or nothing. You can use this trick if you are developing a micro-services architecture and you 
+         need to fetch important, non-sequential data from multiple endpoints as fast as possible.
+
+
+
+
+    </p>
+    <img id="js-pic" src="https://res.cloudinary.com/practicaldev/image/fetch/s--8zpnP7e8--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/vugz15i3sz2asv64clw3.jpg" alt="Javascript Logo" class="center">
+</body>
+</html>
