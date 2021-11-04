@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11/05/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>11/05/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned how to make my own simple React app and how to combine it with CSS. It took me awhile to figure out how to get started with React
+         but after some practice I realized it has alot of similarties with Javascript and HTML. I struggled with Lab 18 on making the Acrostic but after Professor
+         Johnson went over how to take the input from my search bar and implement it into a Acrostic, it definitely helped me think of some ideas for Project 3. One of
+         the most useful things from the reading this week was how to implement and use props which I have not had experience with until now. I learned that props are
+         being used for passing data from one component to another which will be very helpful when we want to retrieve and post data to our app from our database we made
+         in project 2.
+
+    </p>
+    <div id="code">
+    <pre>
+        import { createStore } from 'redux'
+
+        function todoList(array = [], work) {
+            switch (work.type) {
+              case 'ADD_TODO':
+                return array.concat([work.text])
+              default:
+                return array
+            }
+          }
+          
+          const myStore = createStore(todoList, ['Use Redux'])
+          
+          myStore.dispatch({
+            type: 'ADD_TODO',
+            text: 'Read manpage'
+          })
+    </pre>
+    <h2 id="sample"> This code shows a snippit of how to implement React Redux
+    </h2>
+    </div>
+    <p>
+        This week I found this <a href="https://redux.js.org/introduction/getting-started">article</a> which is a great starting point for beginners to React Redux. The
+        reason I decided to take a deeper dive into this article is because Professor Johnson said that next week we will be using Redux in our labs. I wanted to get a 
+        head start so that I know what I am doing for our next couple of labs. From the article I learned that, React Redux is the official React UI bindings layer for Redux.
+        It lets your React components read data from a Redux store, and dispatch actions to the store to update state. What I learned is that Redux at the most basic implementation
+        consists of creating a Redux store then subscribing to updates, and then inside the subscription callback you can... get the current store state, extract the data needed by 
+        this piece of UI and update the UI with the data. 
+
+
+
+
+    </p>
+    <img id="redux-pic" src="https://res.cloudinary.com/practicaldev/image/fetch/s--f75vcUWo--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pyhm0w8sbuo75op77md2.jpg" alt="React Redux Flow" class="center">
+</body>
+</html>
