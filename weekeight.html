@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11/12/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>11/12/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I started to understand more about how Stores work in React. I started working through the example QuoteBase and it taught
+        me why we use React. I love the way that React JS plays in perfectly with HTML and CSS that we learned earlier in the course. I am still
+        working through how to update and persist the store and plan on starting my own implementation of the React App this week. I am excited to
+        be able to connect the React App with my database and see what kind of App I can make for the final project. My database currently holds 
+        student grades so I will be trying to make the next Canvas app. I think it is really nice how we will be able to style our App using CSS
+        because I believe I have a good grasp on how I would want my app to look. 
+
+    </p>
+    <div id="code">
+    <pre>
+    import { useState, useEffect } from 'react'
+
+    function useOnline () {
+        const [online, setOnline] = useState(navigator.onLine)
+
+        function offlineHandler () {
+            setOnline(false)
+        }
+
+        function onlineHandler () {
+            setOnline(true)
+        }
+
+        useEffect (() => {
+            setOnline(navigator.onLine)
+            window.addEventListener('online', onlineHandler)
+            window.addEventListener('offline', offlineHandler)
+
+            return () => {
+                window.removeEventListener('online', onlineHandler)
+                window.removeEventListener('offline', offlineHandler)
+            }
+        }, [])
+
+        return online
+    }
+
+    export default useOnline;
+    </pre>
+    <h2 id="sample"> React Hook Example
+    </h2>
+    </div>
+    <p>
+        This week I found this <a href="https://intersog.com/blog/reactway/">article</a> which talks about how Hooks in ReactJS which 
+        is helpful when we want to reuse stateful logic between components. The advantages of using Hooks is they are easier to work 
+        with and test, less lines of code and makes code look cleaner, and it makes your code more resuable. I feel like using a Hook 
+        will be very useful in our last project so that the code doesn't become so cluttered. Since this will be my first real React app 
+        I make, using Hooks will be very nice so I will be able to reuse alot of the  code without having to rewrite it. In my code snippit
+        above I will show a slight example that I found online of how a Hook works and can be implemented. As you can see, it uses a Hook
+        to detect whether someone is online or offline. This code uses useStatus to keep track of the user's connectivity, and uses useEffect
+         to register event listeners for the events online and offline to set the state accordingly.
+    </p>
+    <img id="hooks" src="https://www.cronj.com/blog/wp-content/uploads/React-Hook.png" alt="React Hooks" class="center">
+</body>
+</html>
