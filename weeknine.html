@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11/19/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>11/19/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned about Redux Thunks in React. In Redux, Thunks are a pattern of writing functions with logic inside 
+        that can interact with a Redux store's dispatch and getState methods. Thunks allow us to write additional Redux-related 
+        logic separate from the User Interface. A Thunk does not execute the code itself, it just returns a function that will be
+        called somewhere else. Once I figured out Redux Thunk then I needed to learn about middleware so I could implement the thunk.
+        We use something like applyMiddleware(thunk), so that we can start dispatching actions asynchronously. The main reason we use
+        Thunks is to return functions not just actions and one of the main uses for middleware is for handling actions that might not be 
+        synchronous.
+
+    </p>
+    <div id="code">
+    <pre>
+        import { FETCH_GITHUB_DATA } from './types';
+        import axios from 'axios';
+
+        const apiUrl = 'https://api.github.com/users/woodmatm';
+
+        export const fetchData = (data) => {
+        return {
+            type: FETCH_GITHUB_DATA,
+            data
+        }
+        };
+
+        export const fetchGithubData = () => {
+        return (dispatch) => {
+            return axios.get(apiUrl)
+            .then(response => {
+                dispatch(fetchData(response.data))
+            })
+            .catch(error => {
+                throw(error);
+            });
+        };
+        };
+
+    </pre>
+    <h2 id="sample"> Example using Redux Thunk and Axios
+    </h2>
+    </div>
+    <p>
+        When I was looking up examples of how to use Redux Thunk I stumbled across
+        Axios. I found this <a href="https://intersog.com/blog/reactway/">article</a>
+        that gave me more insight on what Axios is and how to use it within react and redux.
+        Axios is a promise based HTTP client for the browser and Node.js. Axios makes it easy 
+        to send asynchronous HTTP requests to REST endpoints and perform CRUD operations. It 
+        can be used in plain JavaScript or with a library like React. I feel like using Axios 
+        could be helpful in implementing our database from Project 2 into our app in Project 3.
+        The reason I think it would be better to use Axios over the fetch we have done in class is
+        because Axios has the ability to intercept HTTP requests while Fetch doesn't provide a way to intercept requests.
+    </p>
+    <img id="thunk" src="https://miro.medium.com/max/800/1*uHumlKU6fado6sOF2eHVwg.jpeg" alt="Redux Thunk Diagram" class="center">
+</body>
+</html>
