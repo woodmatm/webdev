@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12/03/2021 Blog Post</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon shortcut" type="image/x-icon" href="wrevor_badge_13.ico"/>
+</head>
+<body>
+    <h2>12/03/2021 Blog Post</h2>
+    <p id="home"><a href="index.html">Home</a></p>
+    <p> This week I learned about how to use React Router and how it is an important part of any React project. 
+        When you build single page applications, you’ll use routes to separate your application into usable pieces 
+        that users can access easily and consistently. Using routes becomes very useful for project 3 where we need
+        to route our database information to the react app. A route's component is rendered when that route matches the URL. 
+        The router will inject several properties into your component when it's rendered such as parameters, location of url,
+        and the route. We use react routers to prevent a page refresh, this is one increasingly common way of having a more seamless 
+        user experience. You don't have to deal with flashes on the screen everytime you try to allocate new information.
+        React router also allows the user to utilize browser functionality like the back button and the refresh page while maintaining 
+        the correct view of the application.
+
+    </p>
+    <div id="code">
+    <pre>
+        export default function Grades() {
+            const { path } = useRouteMatch();
+            return (
+                Grades
+                Switch
+                  Route path={`${path}/ART`}
+                    ART
+                  Route
+                  Route path={`${path}/CS`}
+                    CS
+                  Route
+                Switch
+            );
+          }
+    </pre>
+    <h2 id="sample"> Example of using a Switch and Router in React
+    </h2>
+    </div>
+    <p>
+        This week I found this <a href="https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router">
+            article</a> which takes you through the step by step process of how to use router within your react app. I used
+            this tutorial to help me get a good start on my final project. I learned that as you start to separate your components into routes, 
+            you’ll be able to take advantage of code splitting, preserving state via query parameters, and other tools to improve the user experience.
+            It will be nice to not have to refresh everytime I make a request to my database because it wouldn't make my app look good.
+            I am glad we dicussed routers in class because I didn't know how to do this otherwise, now my react app should run smoothly with my database
+            to make for a good looking project.
+
+    </p>
+    <img id="thunk" src="https://miro.medium.com/max/1400/1*sX8rBJBol5dBp5WIJQrYyw.png" alt="Redux Router" class="center">
+</body>
+</html>
